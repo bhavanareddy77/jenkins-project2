@@ -6,14 +6,7 @@ pipeline {
     }
 
     stages {
-
-        stage('Clone Code') {
-            steps {
-                git 'https://github.com/bhavanareddy77/node-app.git'
-            }
-        }
-
-        stage('Install Dependencies') {
+          stage('Install Dependencies') {
             steps {
                 sh 'npm install'
             }
